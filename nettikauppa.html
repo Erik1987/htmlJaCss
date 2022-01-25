@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nettikauppa</title>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <form><fieldset><legend>Yhteystiedot</legend>
+    <br>
+    <input type="text" name="nimi">Nimi
+    <br>
+    <input type="text" name="katuosoite">Katuosoite
+    <br>
+    <input type="text" name="postinumero">Postinumero
+    <br>
+    <input type="text" name="ppaikka">Postitoimipaikka
+    <br>
+    <input type="text" name="puh">Puhelin
+    <br>
+    <input type="text" name="email">Sähköpostiosoite
+    <br>
+    <input type="password" name="salasana">Salasana
+    <br>
+    Mistä osastoista olet kiinnostunut?
+    <br>
+    <input type="checkbox" id="department1" name="muoti" value="Muoti">
+    <label for="department1">Muoti</label><br>
+    <input type="checkbox" id="department2" name="urheilu" value="Urheilu">
+    <label for="department2">Urheilu</label><br>
+    <input type="checkbox" id="department3" name="sisustaminen" value="Sisustamienn">
+    <label for="department3">Sisustaminen</label><br>
+    <input type="checkbox" id="department4" name="pelit" value="Pelit">
+    <label for="department4">Pelit</label><br>
+    <input type="checkbox" id="department5" name="elokuvat" value="Elokuvat">
+    <label for="department5">Elokuvat</label><br>
+    Maksutapa
+    <br>
+    <select name="maksutapa">
+        <option>Sampo</option>
+        <option>Nordea</option>
+        <option>Osuuspankki</option>
+        <option>Aktia</option>
+    </select>
+    <br>
+    Anna Palautetta.
+    <br>
+    <textarea name="viesti" rows="4" ></textarea>
+    <br>
+    <itallic>Olen lukenut ja hyväksyn tuotteiden toimitusehdot</itallic>
+    <br> 
+    <input type="radio" name="hyvaksy" value="kylla">Kyllä
+    <input type="radio" name="hyvaksy" value="ei">Ei
+    <br>
+    
+    <br>
+    
+    <input type="submit" value="Lähetä">
+
+    
+    </fieldset></form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+    <div class="topnav" id="myTopnav">
+        <a href="neilikka.html" class="active">Etusivu</a>
+        <div class="dropdown">
+          <button class="dropbtn">Tuotteet 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="sisa.html">Sisäkasvit</a>
+            <a href="#ulko">Ulkokasvit</a>
+            <a href="#tyokalut">Työkalut</a>
+            <a href="#hoito">Kasvienhoito</a>
+          </div>
+        </div> 
+        <a href="myymalat.html">Myymälät</a>
+        <a href="tietoa.html">Tietoa meistä</a>
+        <a href="yhteytta.html">Ota yhteyttä</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>

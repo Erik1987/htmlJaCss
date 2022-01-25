@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profiili</title>
+<style>
+  body {width: 100%;}
+  li {visibility: hidden;}
+    table {
+      font-family: arial, sans-serif;
+      border-spacing: 15px;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    
+    td
+      {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      }
+    
+    tr:last-child {
+      background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <h1>Erik Ilonen</h1>
+    <h2>Sukupuoli: Mies</h2>
+    <h2>Syntymävuosi: 1987</h2>
+    <h2>Asuinpaikka: Helsinki</h2>
+    <div>
+      Harrastukset:
+      <ul>
+        <li>kitaransoitto</li>
+        <li>kuntosali</li>
+        <li>lenkkeily</li>
+        <li>Koodaaminen</li>
+      </ul>
+    </div>
+      <h3>Tilastotietoja:</h3> 
+      <table>
+        <tr>
+          <th>Mitä?</th>
+          <th>Keskiarvo</th>
+        </tr>
+        <tr>
+          <td>Valmistunut ammattikorkeasta, tyhmää rimpsua</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Ohjelmiston kehittäjä</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Diipadaapaa</td>
+          <td>10</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum...</td>
+            <td>10</td>
+        </tr>
+
+      </table>
+
+    <p>Olen saanut melkoisesti koodamisen koulutusta. Muun muassa html, css, javascript, C#, java, python, php ym.
+        Koneoppimista pythonilla ja c# käyttäen ml-agents kirjastoa. Pelinkehitystä. Wordpress sivun tehnyt. Ja kaiken 
+        näköistä pientä askartelua koneella. Hallitsen kaikki laitteet käyttikset kuten macOs, linux, windows.
+        Suosikkipelini on Vampire Masquerade: Bloodlines;
+    </p>
+    <img src="https://media.wired.co.uk/photos/607d91994d40fbb952b6ad64/master/w_1600,c_limit/wired-meme-nft-brian.jpg" alt="Flowers in Chania"
+    width="150" height="150">
+
+    <form><fieldset><legend>Yhteydenotto</legend>
+    Nimi: <br>
+    <input type="text" name="nimi">
+    <br>
+    <input type="radio" name="sukupuoli" value="mies">Mies
+    <input type="radio" name="sukupuoli" value="nainen">Nainen
+    <input type="radio" name="sukupuoli" value="en-halua-sanoa">En halua sanoa
+    <br>
+    <select name="syy">
+        <option>Avunpyyntö</option>
+        <option>Muu</option>
+    </select>
+    <br>
+    Viesti
+    <br>
+    <textarea name="viesti" ></textarea>
+    <input type="submit" value="Lähetä">
+
+    
+    </fieldset></form>
+</body>
+</html>

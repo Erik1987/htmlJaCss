@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nettikauppa</title>
+<style>
+   * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 190px;
+  height: 210px;
+  padding: 15px;
+  border: 3px solid;
+  margin:5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+div.kuvaus {
+    text-align: center;
+    
+}
+</style>
+</head>
+<body>
+
+<h1>Kukat</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="http://www.pdphoto.org/images/blizzcon2014.jpg" alt="Snow" style="width:100%">
+    <div class="kuvaus">Esitys</div>
+</div>
+  <div class="column" >
+    <img src="http://www.pdphoto.org/images/best_2011.jpg" alt="Forest" style="width:100%">
+    <div class="kuvaus">Ruoka</div>  
+</div>
+  <div class="column">
+    <img src="http://www.pdphoto.org/images/best.jpg" alt="Mountains" style="width:100%">
+    <div class="kuvaus">Kukka</div>  
+</div>
+  <div class="column">
+    <img src="http://www.pdphoto.org/images/2015.jpg" alt="Mountains" style="width:100%">
+    <div class="kuvaus">Kuumailmapallo</div>  
+</div>
+</div>
+<h1>Kuvat</h1>
+<div class="row">
+    <div class="column">
+      <img src="http://www.pdphoto.org/images/best2014.jpg" alt="Snow" style="width:100%">
+      <div class="kuvaus">Kolibri</div>
+    </div>
+    <div class="column">
+      <img src="http://www.pdphoto.org/images/beer.jpg" alt="Forest" style="width:100%">
+      <div class="kuvaus">Olut</div>
+    </div>
+    <div class="column">
+      <img src="http://www.pdphoto.org/images/sandiego.jpg" alt="Mountains" style="width:100%">
+      <div class="kuvaus">Kaupunki</div>
+    </div>
+    <div class="column">
+      <img src="http://www.pdphoto.org/images/travels.jpg" alt="Mountains" style="width:100%">
+      <div class="kuvaus">Talo</div>
+    </div>
+  </div>
+
+    
+</body>
+</html>
