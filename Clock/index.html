@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Clock</title>
+  <!-- thanks to https://github.com/WebDevSimplified/JavaScript-Clock -->
+</head>
+<body>
+    <canvas id='canv' >
+        
+        <script>
+        //canv.style.zIndex = "-1";
+        const canvas = document.getElementById('canv');
+        const ctx = canvas.getContext('2d');
+        
+        const w = canvas.width = document.body.offsetWidth;
+        const h = canvas.height = document.body.offsetHeight;
+        const cols = Math.floor(w / 20) + 1;
+        const ypos = Array(cols).fill(0);
+      
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, w, h);
+        
+        function matrix () {
+          ctx.fillStyle = '#0001';
+          ctx.fillRect(0, 0, w, h);
+          
+          ctx.fillStyle = '#0f0';
+          ctx.font = '15pt monospace';
+          
+          ypos.forEach((y, ind) => {
+            const text = String.fromCharCode(Math.random() * 128);
+            const x = ind * 20;
+            ctx.fillText(text, x, y);
+            if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
+            else ypos[ind] = y + 20;
+          });
+        }
+        
+        setInterval(matrix, 50);
+      </script> </canvas>
+<div class="clock" id="clock1">
+    <div class="hand hour" data-hour-hand></div>
+    <div class="hand minute" data-minute-hand></div>
+    <div class="hand second" data-second-hand></div>
+    <div class="number number1">1</div>
+    <div class="number number2">2</div>
+    <div class="number number3">3</div>
+    <div class="number number4">4</div>
+    <div class="number number5">5</div>
+    <div class="number number6">6</div>
+    <div class="number number7">7</div>
+    <div class="number number8">8</div>
+    <div class="number number9">9</div>
+    <div class="number number10">10</div>
+    <div class="number number11">11</div>
+    <div class="number number12">12</div>
+  </div>
+
+
+
+</body>
+</html>
