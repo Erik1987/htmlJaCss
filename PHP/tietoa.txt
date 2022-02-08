@@ -1,0 +1,38 @@
+Tiedonsiirto palvelimen ja selaimen välillä
+JavaScript
+Fetch
+- Get
+- post
+- json
+Linkki (a href)
+- get
+Lomake (form)
+- action (verkko-osoite) ja method (get tai post)
+- get
+- post
+Php
+$_GET
+$_POST
+$_REQUEST
+$_FILES
+echo
+php-sivujen välinen tiedonsiirto
+$_SESSION
+Curl-kirjasto
+Selaimen ohjaaminen ja tietojen siirto toiselle sivulle php:llä
+I
+Header(“Location: uusisivu.php?tiedot_tieto”); (jos mitään ei ole siirretty selaimelle, ei edes virheilmoituksia)
+II
+echo “<script>location.replace('uusisivu.php?tiedot=tieto&toinen=2')</script>”;
+III
+echo "<form id='lomake' method='post' action='uusisivu.php'>";
+echo "<input name='taulukko[]' value='$arvo1'>";
+echo "<input name='taulukko[]' value='$arvo2'>";
+echo "<input name='taulukko[]' value='$arvo3'>";
+echo "</form>";
+echo "<script>document.querySelector('#lomake').submit();<script>";
+uusisivu.php
+foreach($_POST['taulukko'] as $arvo){
+..
+}
+;
