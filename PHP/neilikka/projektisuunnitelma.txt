@@ -1,0 +1,32 @@
+PROJEKTIN TEKNISIÄ VAATIMUKSIA
+- Dynaaminen (tietokanta)
+- Responsiivinen
+- Responsiivinen navigointi
+- Suojattuja ja julkisia sivuja
+- Rekisteröitymisen sähköpostivahvistus 
+- Palautelomake
+- Versionhallinta
+WEB-SOVELLUKSEN PROJEKTISUUNNITELMA
+- Aihe
+- Tavoite
+- Asemointi (fokus)
+    Kenelle .. 
+    Mihin tarpeeseen ..
+    Tässä on ratkaisu, joka sisältää .. 
+    Verrattuna olemassa oleviin palveluihin, kuten ..
+    Tässä palvelussa on ..
+- Aikataulu
+- Rajaukset
+- Ohjelmointikielet ja työkalut (resurssit)
+- Riskit
+    Järjestys: Merkitys = Todennäköisyys (1..3) x Vaikutus (1..3), esim. 2 x 3 = 6
+    Riskin eliminointi
+    Yksi näkökulma: aiheen tuntemus vs. teknologian tuntemus
+  
+PROJEKTIN TOTEUTUS
+Toteutus siten, että on koko ajan jotakin näytettävää "asiakkaalle"
+Mieluusti yleiskäyttöinen runko plus omaan ideaan perustuva sovellus
+Yksin tai kaksin
+Sparraaja (toinen opiskelija)
+Projektiklinikka esim. 1 kpl/vko a 1 t  
+Tulosten esittely Azuressa

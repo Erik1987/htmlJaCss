@@ -1,10 +1,17 @@
+<?php 
+include('header.php');
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <style>
+
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
@@ -51,25 +58,37 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<form action="/action_page.php" style="max-width:500px;margin:auto">
+<form action="./register_controller.php" method="post" style="max-width:500px;margin:auto">
   <h2>Rekisteröidy</h2>
+
+  <?php echo $success_msg; ?>
+  <?php echo $email_exist; ?>
+  <?php echo $email_verify_err; ?>
+  <?php echo $email_verify_success; ?>
+  
   <div class="input-container">
     <i class="fa fa-user icon"></i>
     <input class="input-field" type="text" placeholder="Käyttäjätunnus" name="username">
+    <?php echo $UsernameEmptyErr; ?>
+    <?php echo $user_NameErr; ?>
   </div>
 
   <div class="input-container">
     <i class="fa fa-envelope icon"></i>
     <input class="input-field" type="text" placeholder="Sähköposti" name="email">
+    <?php echo $_emailErr; ?>
+    <?php echo $emailEmptyErr; ?>
   </div>
-  
   <div class="input-container">
     <i class="fa fa-key icon"></i>
     <input class="input-field" type="password" placeholder="Salasana" name="password">
+    <?php echo $_passwordErr; ?>
+    <?php echo $passwordEmptyErr; ?>
   </div>
-
-  <button type="submit" class="btn">Rekisteröi</button>
+  <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+  <button type="submit" class="btn" name="register">Rekisteröi</button>
 </form>
 
+<?php include('footer.php'); ?>
 </body>
 </html>

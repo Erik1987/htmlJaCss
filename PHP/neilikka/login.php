@@ -1,4 +1,28 @@
 
+<?php
+include 'inc/header.php';
+Session::CheckLogin();
+?>
+
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+   $userLog = $users->userLoginAuthotication($_POST);
+}
+if (isset($userLog)) {
+  echo $userLog;
+}
+
+$logout = Session::get('logout');
+if (isset($logout)) {
+  echo $logout;
+}
+
+
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,7 +111,7 @@ span.psw {
     <label for="password"><b>Salasana</b></label>
     <input type="password" placeholder="Syötä salasana" id="password" name="password" required>
         
-    <button type="submit" value="Login">Kirjaudu</button>
+    <button type="submit" value="Login" name="login">Kirjaudu</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Muista minut
     </label>
